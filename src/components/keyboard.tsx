@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 type KeyboardPropos = {
     word?: string;
     gameover: boolean;
@@ -32,7 +30,11 @@ const Keyboard = ({ word, gameover, setGameover, rightLetters, setRightLetters, 
                         <button
                             className="alphabetLetter" key={i}
                             onClick={() => checkLetter(letter)}
-                            disabled={gameover || wrongLetters.includes(letter)}
+                            disabled={
+                                gameover
+                                || wrongLetters.includes(letter)
+                                || rightLetters.includes(letter)
+                            }
                         >
                             {letter}
                         </button>

@@ -66,11 +66,11 @@ const Rightleg = () => {
         <>
             <div style={{
                 position: "absolute",
-                top: "250px",
+                top: "253px",
                 width: "90px",
                 height: "10px",
                 backgroundColor: "#000",
-                transform: "translateX(163px) rotate(45deg)"
+                transform: "translateX(161px) rotate(45deg)"
             }}></div>
         </>
     )
@@ -81,7 +81,7 @@ const Leftleg = () => {
         <>
             <div style={{
                 position: "absolute",
-                top: "250px",
+                top: "253px",
                 width: "90px",
                 height: "10px",
                 backgroundColor: "#000",
